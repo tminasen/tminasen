@@ -1,0 +1,21 @@
+<header class="header">
+  <app-heading class="header__title" text="Minase's My Page" level="1" color="white"></app-heading>
+  <div class="header__menu">
+    <input id="menu__input" type="checkbox" class="menu__input--none" [(ngModel)]="isMenuOpened">
+    <label class="menu--open" for="menu__input" aria-label="メニューを開く" tabindex="0"><span></span></label>
+    <label class="menu__input--none menu--close" for="menu__input" aria-label="メニューを閉じる" tabindex="0"></label>
+    <div class="menu__content">
+      <nav class="menu__navigation">
+        <app-heading [isHidden]="true" text="Minase's page links"></app-heading>
+        <ul class="navigation__list">
+          <li class="navigation__item"><a class="navigation__link" routerLink="/" (click)="closeDialog()" [tabIndex]="isMenuOpened ? 1 : -1">
+            <app-heading text="About Me" level="2" color="white" [attr.aria-hidden]="!isMenuOpened"></app-heading>
+          </a></li>
+          <li class="navigation__item"><a class="navigation__link" routerLink="/link" (click)="closeDialog()" [tabIndex]="isMenuOpened ? 1 : -1">
+            <app-heading color="white" level="2" text="Links" [ariaHidden]="!isMenuOpened"></app-heading>
+          </a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>

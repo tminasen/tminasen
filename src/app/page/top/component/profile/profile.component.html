@@ -1,0 +1,27 @@
+<section>
+  <app-heading level="1" text="Profile"></app-heading>
+  <div class="profile">
+    <div class="profile__detail">
+      <section class="profile__section">
+        <app-heading level="2" text="Name"></app-heading>
+        <p class="profile__value">水無瀬</p>
+      </section>
+      <section class="profile__section">
+        <app-heading level="2" text="Job"></app-heading>
+        <p class="profile__value">Web Developer</p>
+      </section>
+    </div>
+    <div class="profile__detail">
+      <section class="profile__section">
+        <app-heading level="2" text="Accounts"></app-heading>
+          <ul class="profile__link">
+            <li *ngFor="let item of linkList">
+              <a [href]="item.linkUrl" target="_blank" class="profile__link__text">
+                <img [src]="item.icon" [alt]="item.linkText" class="profile__list__icon" />
+              </a>
+            </li>
+          </ul>
+      </section>
+    </div>
+  </div>
+</section>

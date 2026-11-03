@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+// color
+$black: #333333;
+$white: #ffffff;
+$light-blue: #c6dcff;
+$light-grey: #919191;
+$grey200: #e9ecef;
+
+// header
+$header-bg-color: #448aff;
+$header-font-color: #333333;
+$header-menu-button-color: #ffffff;
+$header-menu-bg-color: #448aff;
+$header-menu-opened-bg-color: rgb(0, 0, 0, 0.5);
+
+// profile
+$profile-bg-color: #ffffff;
+
+// links
+$links-bg-color: #ffffff;
+
+// list
+$list-link-color: #0033cc;
+
+// radius
+$radius: 18px;
+
+// font-size
+$font-size: 62.5%;
+
+// heading
+$heading-level-1-pc: 3.2rem;
+$heading-level-2-pc: 3rem;
+$heading-level-3-pc: 2.8rem;
+$heading-level-4-pc: 2.4rem;
+$heading-font-black: #333333;
+$heading-font-white: #ffffff;
+
+// icon size
+$pc-list-small-icon: 60px;
+$sp-list-small-icon: 40px;
+$pc-list-large-icon: 100px;
+$sp-list-large-icon: 80px;
+
+// window size
+// sp縦max width
+$sp-max-width: 411px;
+// tablet横 min width
+$tab-max-width: 959px;
+$tab-min-width: 600px;

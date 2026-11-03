@@ -1,0 +1,22 @@
+@charset "UTF-8";
+@import "../../../common/style/variable";
+
+.top-component__main {
+  margin-top: 24px;
+}
+
+.top-component__sidebar {
+  padding: 4px 4px 0 24px;
+  width: 25%;
+}
+
+
+// スマホ用
+@media screen and (max-width: $sp-max-width) {
+  .top-component__main {
+    margin-top: 12px
+  }
+  .top-component__sidebar {
+    display: none;
+  }
+}
