@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { LinkListItem } from '../../../common/model/ListItem';
 
 @Component({
-  selector: 'app-component',
-  templateUrl: './links.component.html',
-  styleUrls: ['./links.component.scss']
+    selector: 'app-component',
+    templateUrl: './links.component.html',
+    styleUrls: ['./links.component.scss'],
+    standalone: false
 })
 export class LinksComponent {
   linkList: LinkListItem[] = [

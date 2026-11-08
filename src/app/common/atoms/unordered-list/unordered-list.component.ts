@@ -2,9 +2,10 @@ import { Component, Input, OnInit } from '@angular/core';
 import { LinkListItem } from '../../model/ListItem';
 
 @Component({
-  selector: 'app-ul-component',
-  templateUrl: './unordered-list.component.html',
-  styleUrls: ['./unordered-list.component.scss']
+    selector: 'app-ul-component',
+    templateUrl: './unordered-list.component.html',
+    styleUrls: ['./unordered-list.component.scss'],
+    standalone: false
 })
 export class UnorderedListComponent implements OnInit {
   @Input() itemList: LinkListItem[];
