@@ -1,0 +1,16 @@
+<ul [ngClass]="listClass">
+  @for (item of itemList; track item) {
+    <li [ngClass]="itemClass">
+      <a [href]="item.linkUrl" target="_blank" class="list__link">
+        @switch (type) {
+          @case ('icon') {
+            <img [src]="item.icon" [alt]="item.linkText" [ngClass]="iconClass">
+          }
+          @case ('text') {
+            {{item.linkText}}
+          }
+        }
+      </a>
+    </li>
+  }
+</ul>

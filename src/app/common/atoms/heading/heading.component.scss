@@ -1,0 +1,31 @@
+@charset "UTF-8";
+@use "../../style/variable" as *;
+@use "../../style/mixin" as *;
+
+.heading-1 {
+  font-size: $heading-level-1-pc;
+}
+
+.heading-2 {
+  font-size: $heading-level-2-pc;
+}
+
+.heading-3 {
+  font-size: $heading-level-3-pc;
+}
+
+.heading-4 {
+  font-size: $heading-level-4-pc;
+}
+
+.heading-black {
+  color: $heading-font-black;
+}
+
+.heading-white {
+  color: $heading-font-white;
+}
+
+.hidden {
+  @include hidden;
+}

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@use "../../style/variable" as *;
+
+.list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.list--horizontal {
+  flex-direction: row;
+}
+
+.list--vertical {
+  flex-direction: column;
+}
+
+.list__item--triangle:before {
+  content: '▷';
+}
+
+.list__link {
+  color: $list-link-color;
+  text-decoration: none;
+}
+
+.list__small-icon {
+  height: $pc-list-small-icon;
+  width: $pc-list-small-icon;
+
+  // スマホ用(変更箇所だけ上書き)
+  @media screen and (max-width: $sp-max-width) {
+    height: $sp-list-small-icon;
+    width: $sp-list-small-icon;
+  }
+}
+
+.list__large-icon {
+  height: $pc-list-large-icon;
+  width: $pc-list-large-icon;
+
+  // スマホ用(変更箇所だけ上書き)
+  @media screen and (max-width: $sp-max-width) {
+    height: $sp-list-large-icon;
+    width: $sp-list-large-icon;
+  }
+}

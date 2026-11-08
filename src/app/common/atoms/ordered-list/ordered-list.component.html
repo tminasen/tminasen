@@ -1,0 +1,10 @@
+<ol>
+  @for (item of itemList; track item) {
+    <li>
+      <article>
+        <h1><a [href]="item.linkUrl" target="_blank">{{item.linkText}}</a></h1>
+        <p>{{item.description}}</p>
+      </article>
+    </li>
+  }
+</ol>
