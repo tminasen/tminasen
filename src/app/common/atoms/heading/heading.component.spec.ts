@@ -22,4 +22,11 @@ describe('HeadingComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  describe('default inputs', () => {
+    it('should initialize text as empty string when not provided', () => {
+      // Given / When / Then
+      expect(component.text).toBe('');
+    });
+  });
 });

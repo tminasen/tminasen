@@ -1,13 +1,14 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'app-heading',
     templateUrl: './heading.component.html',
     styleUrls: ['./heading.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class HeadingComponent implements OnInit {
-  @Input() text: string;
+  @Input() text = '';
   @Input() level: '1' | '2' | '3' | '4' = '1';
   @Input() color: 'black' | 'white' = 'black';
   @Input() isHidden = false;

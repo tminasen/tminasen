@@ -1,16 +1,17 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { LinkListItem } from '../../model/ListItem';
 
 @Component({
     selector: 'app-ul-component',
     templateUrl: './unordered-list.component.html',
     styleUrls: ['./unordered-list.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class UnorderedListComponent implements OnInit {
-  @Input() itemList: LinkListItem[];
-  @Input() type: 'text' | 'icon';
-  @Input() size: 'small' | 'large' | 'none';
+  @Input() itemList: LinkListItem[] = [];
+  @Input() type: 'text' | 'icon' = 'text';
+  @Input() size: 'small' | 'large' | 'none' = 'none';
   @Input() styles: 'none' | 'dot' | 'triangle' = 'none';
   @Input() direction: 'horizontal' | 'vertical' = 'horizontal';
 

@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { SkillListItem } from '../../../../common/model/ListItem';
 
 @Component({
     selector: 'app-skill',
     templateUrl: './skill.component.html',
     styleUrls: ['./skill.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class SkillComponent {

@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { LinkListItem } from '../../../common/model/ListItem';
 
 @Component({
     selector: 'app-component',
     templateUrl: './links.component.html',
     styleUrls: ['./links.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class LinksComponent {
