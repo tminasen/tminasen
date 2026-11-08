@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "src/app/common/style/variable";
+@use "../../../common/style/variable" as *;
 
 .links {
   background-color: $links-bg-color;

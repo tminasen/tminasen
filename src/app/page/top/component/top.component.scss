@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "../../../common/style/variable";
+@use "../../../common/style/variable" as *;
 
 .top-component__main {
   margin-top: 24px;

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "src/app/common/style/variable";
+@use "../../style/variable" as *;
 
 .list {
   display: flex;

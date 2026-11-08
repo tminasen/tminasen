@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import "app/common/style/reset";
-@import "app/common/style/variable";
+@use "./app/common/style/reset";
+@use "./app/common/style/variable" as *;
 
 
 html {

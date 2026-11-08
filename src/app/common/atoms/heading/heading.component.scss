@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import "../../style/variable";
-@import "../../style/mixin";
+@use "../../style/variable" as *;
+@use "../../style/mixin" as *;
 
 .heading-1 {
   font-size: $heading-level-1-pc;

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "../../style/variable";
+@use "../../style/variable" as *;
 
 .footer {
   background-color: $grey200;

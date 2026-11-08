@@ -1,5 +1,6 @@
 @charset "UTF-8";
-@import "../../../../common/style/mixin";
+@use "../../../../common/style/variable" as *;
+@use "../../../../common/style/mixin" as *;
 
 .profile {
   margin-top: 12px;
