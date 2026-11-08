@@ -4,25 +4,25 @@
     <article class="skill__item">
       <app-heading level="2" text="Frontend Skill"></app-heading>
       <div class="skill__list">
-        <ng-container *ngFor="let item of frontendSkillList">
+        @for (item of frontendSkillList; track item) {
           <section class="skill__list__item">
             <app-heading [text]="item.skill" isHidden="true" level="2"></app-heading>
             <img [alt]="item.skill" [src]="item.icon"
-                 class="skill__icon">
+              class="skill__icon">
           </section>
-        </ng-container>
+        }
       </div>
     </article>
     <article class="skill__item">
       <app-heading level="3" text="Backend Skill"></app-heading>
       <div class="skill__list">
-        <ng-container *ngFor="let item of backendSkillList">
+        @for (item of backendSkillList; track item) {
           <article class="skill__list__item">
             <app-heading [text]="item.skill" isHidden="true" level="4"></app-heading>
             <img [alt]="item.skill" [src]="item.icon"
-                 class="skill__icon">
+              class="skill__icon">
           </article>
-        </ng-container>
+        }
       </div>
     </article>
   </div>

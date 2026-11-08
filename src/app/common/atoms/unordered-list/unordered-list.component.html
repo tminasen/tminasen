@@ -1,10 +1,16 @@
 <ul [ngClass]="listClass">
-  <li *ngFor="let item of itemList" [ngClass]="itemClass">
-    <a [href]="item.linkUrl" target="_blank" class="list__link">
-      <ng-container [ngSwitch]="type">
-        <img *ngSwitchCase="'icon'" [src]="item.icon" [alt]="item.linkText" [ngClass]="iconClass">
-        <ng-container *ngSwitchCase="'text'">{{item.linkText}}</ng-container>
-      </ng-container>
-    </a>
-  </li>
+  @for (item of itemList; track item) {
+    <li [ngClass]="itemClass">
+      <a [href]="item.linkUrl" target="_blank" class="list__link">
+        @switch (type) {
+          @case ('icon') {
+            <img [src]="item.icon" [alt]="item.linkText" [ngClass]="iconClass">
+          }
+          @case ('text') {
+            {{item.linkText}}
+          }
+        }
+      </a>
+    </li>
+  }
 </ul>

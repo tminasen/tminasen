@@ -14,13 +14,15 @@
     <div class="profile__detail">
       <section class="profile__section">
         <app-heading level="2" text="Accounts"></app-heading>
-          <ul class="profile__link">
-            <li *ngFor="let item of linkList">
+        <ul class="profile__link">
+          @for (item of linkList; track item) {
+            <li>
               <a [href]="item.linkUrl" target="_blank" class="profile__link__text">
                 <img [src]="item.icon" [alt]="item.linkText" class="profile__list__icon" />
               </a>
             </li>
-          </ul>
+          }
+        </ul>
       </section>
     </div>
   </div>
